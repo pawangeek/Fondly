@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { del } from '@vercel/blob';
-import { CARDS_REST, SUPABASE_URL, SECRET, serviceHeaders, send } from './_lib';
+import { CARDS_REST, SUPABASE_URL, SECRET, serviceHeaders, send } from './_lib.js';
 
 const RETENTION_DAYS = 7;
 const BATCH = 100;

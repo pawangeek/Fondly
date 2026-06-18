@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { CARDS_REST, SUPABASE_URL, SECRET, randomSlug, serviceHeaders, readBody, send } from './_lib';
+import { CARDS_REST, SUPABASE_URL, SECRET, randomSlug, serviceHeaders, readBody, send } from './_lib.js';
 
 async function slugTaken(slug: string): Promise<boolean> {
   const r = await fetch(`${CARDS_REST}?slug=eq.${slug}&select=slug`, { headers: serviceHeaders() });

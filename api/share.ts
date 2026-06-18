@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { SUPABASE_URL, PUBLISHABLE, CARDS_REST, escapeHtml, SLUG_RE } from './_lib';
+import { SUPABASE_URL, PUBLISHABLE, CARDS_REST, escapeHtml, SLUG_RE } from './_lib.js';
 
 interface CardRow {
   data?: { name?: string; from?: string; occasion?: string };

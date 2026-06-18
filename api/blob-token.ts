@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { handleUpload, type HandleUploadBody } from '@vercel/blob/client';
-import { readBody, send } from './_lib';
+import { readBody, send } from './_lib.js';
 
 // Issues short-lived client-upload tokens so the browser can stream photos and
 // the voice note straight to Vercel Blob (avoids the 4.5 MB function body cap).
