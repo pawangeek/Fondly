@@ -1,0 +1,52 @@
+@import '@fontsource-variable/inter';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: hsl(280 50% 5%);
+  color: hsl(0 0% 98%);
+  font-family: 'Inter Variable', Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* App ambient backdrop — deep purple with soft pink/orange aurora */
+.app-bg {
+  background:
+    radial-gradient(60% 40% at 80% -5%, hsl(328 86% 59% / 0.18), transparent 60%),
+    radial-gradient(50% 35% at 10% 5%, hsl(285 84% 56% / 0.16), transparent 60%),
+    radial-gradient(70% 50% at 50% 110%, hsl(24 95% 53% / 0.12), transparent 60%),
+    hsl(280 50% 5%);
+}
+
+.gradient-text {
+  background: linear-gradient(95deg, hsl(328 86% 64%), hsl(24 95% 60%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cta-gradient {
+  background: linear-gradient(95deg, hsl(328 86% 59%), hsl(300 84% 56%), hsl(24 95% 53%));
+  background-size: 200% 100%;
+}
+
+/* Hide scrollbars inside the phone frame for a native feel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
