@@ -10,7 +10,12 @@ export default function PhoneFrame({ children }: { children: ReactNode }) {
                    bg-ink sm:rounded-[2.4rem] sm:border sm:border-line/70
                    sm:shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]"
       >
-        <div className="h-full overflow-y-auto no-scrollbar overscroll-contain">{children}</div>
+        <div className="h-full overflow-y-auto no-scrollbar overscroll-contain">
+          {children}
+          <footer className="px-5 pb-8 pt-4 text-center text-xs text-muted">
+            Made with <span className="text-primary">♥</span> by Pawan
+          </footer>
+        </div>
       </div>
     </div>
   );
